@@ -6,13 +6,17 @@ This application leverages the H2 Database dependency to enable an embedded, in-
 1. Download and install Java 17 from [Oracle](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 2. Download the latest .jar file from the [releases page](https://github.com/skylerlink/OLISApp/releases)
 3. Open a terminal, navigate to the directory the .jar file is in and run: `java -jar OLISApp-0.0.1.jar`
-   - Example screenshot from Windows of how to navigate to the directory you downloaded the .jar to and execute the command to run the jar <img width="536" height="365" alt="image" src="https://github.com/user-attachments/assets/50dfc28f-caf7-410c-a4f5-6447b62a832d" />
+   - Example screenshot from Windows of how to navigate to the directory you downloaded the .jar to and execute the command to run the jar
+   - <img width="536" height="365" alt="image" src="https://github.com/user-attachments/assets/50dfc28f-caf7-410c-a4f5-6447b62a832d" />
 
 5. Visit http://localhost:8080 in your browser
 
 ## Screenshots
 ### Submit page
-![alt text](image.png)
+<img width="662" height="452" alt="image" src="https://github.com/user-attachments/assets/af4fb8de-f9c4-4a9e-aeaf-bb5942f3b1ee" />
 
 ### Confirmation page / previous entries
-![alt text](image-1.png)
+<img width="658" height="423" alt="image-1" src="https://github.com/user-attachments/assets/c44099a4-7120-472d-8f87-5612588fde85" />
+
+## Submission failure error
+<img width="666" height="519" alt="image" src="https://github.com/user-attachments/assets/c702259b-6b51-42ed-8b74-3650fc8376b9" />
