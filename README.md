@@ -10,7 +10,8 @@ This application leverages the H2 Database dependency to enable an embedded, in-
    - Example screenshot from Windows of how to navigate to the directory you downloaded the .jar to and execute the command to run the jar
    - <img width="536" height="365" alt="image" src="https://github.com/user-attachments/assets/50dfc28f-caf7-410c-a4f5-6447b62a832d" />
 
-5. Visit http://localhost:8080 in your browser
+5. While the application is running in your terminal, visit http://localhost:8080 in your browser
+6. To quit the application, type CTRL + C in your terminal
 
 ## Screenshots
 ### Submit page
