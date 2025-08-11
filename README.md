@@ -2,7 +2,7 @@
 ### This is an application to satisfy the requirements of the Ohio Legislative Information Systems code screening excercise for the Software Engineer position.
 
 ## How to run
-This application leverages the H2 Database dependency to enable an embedded, in-memory database. This eases setup and allows us to get up and running faster.
+This application leverages the H2 Database dependency to enable an embedded, in-memory database. This eases setup and allows us to get up and running faster. It's worth noting, since the database is in-memory it will not persist across restarts of the application. If the application is stopped, all data is lost. Thus the database is for demonstration purposes only, a persistent database would be used in a production environment.
 1. Download and install Java 17 from [Oracle](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
    - On Windows, the MSI installer is pretty straight-forward. You can read more [here for help on installing Java](https://www.java.com/en/download/help/download_options.html)
 3. Download the latest .jar file from the [releases page](https://github.com/skylerlink/OLISApp/releases)
