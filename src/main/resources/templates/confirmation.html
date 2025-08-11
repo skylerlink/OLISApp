@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Confirmation</title>
-    <link rel="stylesheet" href="/styles.css">
+    <title>Submission Confirmation</title>
+     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <div class="container">
-        <h2>Submission Confirmed</h2>
-        <p><strong>Name:</strong> <span th:text="${person.name}"></span></p>
-        <p><strong>Age:</strong> <span th:text="${person.age}"></span></p>
-        <p><strong>Title:</strong> <span th:text="${person.title}"></span></p>
-        <p><strong>Hometown:</strong> <span th:text="${person.hometown}"></span></p>
+
+        <div th:if="${person != null}">
+            <h2>Submission Confirmed</h2>
+            <p><strong>Name:</strong> <span th:text="${person.name}"></span></p>
+            <p><strong>Age:</strong> <span th:text="${person.age}"></span></p>
+            <p><strong>Title:</strong> <span th:text="${person.title}"></span></p>
+            <p><strong>Hometown:</strong> <span th:text="${person.hometown}"></span></p>
+        </div>
 
         <h3>Previous Entries</h3>
         <table>
@@ -23,14 +26,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="p : ${allPeople}">
-                    <td th:text="${p.name}"></td>
-                    <td th:text="${p.age}"></td>
-                    <td th:text="${p.title}"></td>
-                    <td th:text="${p.hometown}"></td>
+                <tr th:each="entry : ${allPeople}">
+                    <td th:text="${entry.name}">Name</td>
+                    <td th:text="${entry.age}">Age</td>
+                    <td th:text="${entry.title}">Title</td>
+                    <td th:text="${entry.hometown}">Hometown</td>
                 </tr>
             </tbody>
         </table>
+
+        <button onclick="location.href='/'" type="button">Submit Another</button>
     </div>
 </body>
 </html>

@@ -32,4 +32,10 @@ public class PersonController {
         model.addAttribute("allPeople", personService.getAll());
         return "confirmation";
     }
+
+    @GetMapping("/submit")
+    public String showConfirmation(Model model) {
+        model.addAttribute("allPeople", personService.getAll());
+        return "confirmation";
+    }
 }
