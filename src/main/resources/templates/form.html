@@ -6,6 +6,7 @@
 </head>
 <body>
     <div class="container">
+        <a href="/submit" class="btn">View Previous Entries</a>
         <h2>Enter Person Details</h2>
         <form action="/submit" method="post" th:object="${person}">
             <label>Name (required):</label>
@@ -24,7 +25,6 @@
 
             <button type="submit">Submit</button>
         </form>
-        <button onclick="location.href='/submit'" type="button" style="background: blue">View Previous Entries</button>
     </div>
 </body>
 </html>
